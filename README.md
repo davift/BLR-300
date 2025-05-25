@@ -210,7 +210,7 @@ The comment in the datasheet "Expected Communication Pattern on a non-rewired ad
 
 There are two keys described in the datasheet as CLIENT DEFAULT KEY and SCRAMBLED KEY.
 
-![PCB Final Back](https://github.com/davift/BLR-300/blob/main/PCB_Back_Keys.png)
+![PCB Final Back](https://github.com/davift/BLR-300/blob/main/PCB_Back_Keys.jpg)
 
 There is an old Windows font called Wingdings that contains the same symbols printed on the back of the board. Those keys were decoded with the chart below.
 
