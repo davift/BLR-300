@@ -33,7 +33,11 @@ Start by drawing a schematic of the circuit. KiCad (a free and open-source appli
 
 **NOTE:** There is a checkered pattern printed on the board to make following the traces and reverse engineering more difficult.
 
-Datasheet Table
+Datasheet Notes Revealed
+
+![Pinout Table](https://github.com/davift/BLR-300/blob/main/BLR-300-Reference-manual_Notes.png)
+
+Datasheet Pinout Table
 
 ![Pinout Table](https://github.com/davift/BLR-300/blob/main/BLR-300-Reference-manual_Pinout.png)
 
@@ -142,6 +146,75 @@ At this point, the PCB can be connected to the badge and attached to the dock pr
 
 ## Encoded system
 
-There is an old Windows font that contains the same symbols printed on the back of the board. You will need to decode the message using this font to obtain the flag.
+[![Message Captured]](https://www.youtube.com/shorts/3g_Ai0capvw)
+
+From the video we got the following byte sequence.
+
+Note: LEDs 7 and 8 were still inverted at the time of the recording.
+
+```
+00001010
+00100111
+11011000
+11110101
+00001010
+11110101
+00001010
+10001111
+00001101
+00000110
+10000111
+00010001
+00101111
+00011100
+00110010
+10110110
+10100110
+10010110
+00011100
+10110010
+00010101
+00001110
+00111111
+00110010
+10010110
+00110010
+10100110
+00000101
+00001110
+00011111
+10011101
+10110010
+10110110
+00010010
+11110101
+00001010
+11110101
+00001010
+11011010
+11011000
+00100111
+11110101
+00001010
+11110101
+00001010
+11111111
+11110101
+00001010
+11110101
+00001010
+...
+```
+
+The comment in the datasheet "Expected Communication Pattern on a non-rewired addon: 11110101 00001010 ..." indicates the begining of the message. We have a match!
+
+There are two keys described in the datasheet as CLIENT DEFAULT KEY and SCRAMBLED KEY.
+
+![PCB Final Back](https://github.com/davift/BLR-300/blob/main/PCB_Back_Keys.png)
+
+There is an old Windows font called Wingdings that contains the same symbols printed on the back of the board. Those keys were decoded with the chart below.
+
+![Wingdings Chart](https://github.com/davift/BLR-300/blob/main/Wingdings_Chart.png)
 
 (to be continued)
+
