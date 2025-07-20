@@ -2,9 +2,11 @@
 
 Key Card Addon: Binary LED Reader - 300 (BLR-300)
 
-This writeup walks through the process of solving the hardware challenge in the NSEC 2025 CTF.
+This write-up walks through the process of solving the hardware challenge in the NSEC 2025 CTF.
 
 **NOTE:** This is a beginner-friendly challenge that mostly requires investigating traces and understanding the direction of current flow.
+
+The official source code released by NSEC for the Badge and Dock is available at [NSEC-Badge](https://github.com/nsec/nsec-badge/)
 
 ## Overview
 
